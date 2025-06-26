@@ -1,0 +1,116 @@
+body {
+    margin: 0 auto;
+    /* cursor: url('alternate.ani'), auto; */
+    
+}
+
+* {
+    font-family: "Philosopher";
+}
+
+/* div {
+    border: 2px solid red;
+} */
+
+.up {
+    width: 100%;
+    height: 2.5vw;
+    background-color: #FFE6C1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.text-up {
+    width: 100%;
+    height: 2vw;
+    color: #cdcdcd;
+    font-size: 1.9vw;
+    padding-left: 100%;
+    animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+}
+
+.what-are-you-doing-here {
+    width: 100%;
+    margin-top: -4vw;
+}
+
+.photo-glav {
+    width: 100%;
+    height: auto;
+}
+
+.all-com {
+    z-index: 100;
+    width: 100%;
+    height: 55vw;
+    background-color: #FFE6C1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+}
+
+.photo-com {
+    width: 40vw;
+    transition: 0.3s ease;
+}
+
+.comp {
+    z-index: 10;
+    position: absolute;
+    top: 25vw;
+    font-size: 3vw;
+    color: #D5A324;
+    font-style: italic;
+    white-space: pre-line;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.photo-com:hover {
+    scale: 1.1;
+}
+
+.photo-com:hover ~ .comp, .photo-com:hover + .comp {
+    scale: 1.1;
+}
+
+.but {
+    width: 17vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    background-color: #FFE6C1;
+    border: 2px solid #888888;
+    color: #888888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* #bubbles { 
+    z-index: -10;
+background:#FFE6C1;
+width:100%;
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+} */
+
+
